@@ -1,0 +1,245 @@
+2024-06-13 13:34:14.803 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 340.2372 ms
+2024-06-13 13:34:15.531 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 210.1029 ms
+2024-06-13 13:36:56.426 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 13:36:59.335 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 2917.0330 ms
+2024-06-13 13:37:38.775 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 1163.1815 ms
+2024-06-13 13:38:21.892 +07:00 [Information] HTTP "POST" "/api/Ticket/CreateTicket" responded 200 in 34181.4205 ms
+2024-06-13 13:47:49.067 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 238.2742 ms
+2024-06-13 13:47:49.791 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 214.4347 ms
+2024-06-13 13:48:14.072 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 13:48:15.345 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1278.6891 ms
+2024-06-13 13:48:26.624 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 733.6644 ms
+2024-06-13 13:48:35.274 +07:00 [Information] HTTP "POST" "/api/Ticket/CreateTicket" responded 200 in 553.2895 ms
+2024-06-13 13:50:27.739 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 8.1947 ms
+2024-06-13 13:50:36.568 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 5.4655 ms
+2024-06-13 13:50:39.051 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 5.9731 ms
+2024-06-13 13:50:43.794 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 2.2386 ms
+2024-06-13 13:51:01.097 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 239.0759 ms
+2024-06-13 13:51:09.773 +07:00 [Information] HTTP "POST" "/api/Ticket/CreateTicket" responded 200 in 182.2912 ms
+2024-06-13 13:57:10.801 +07:00 [Information] DataVnpay send:Motor20240613135109
+2024-06-13 13:57:10.808 +07:00 [Information] CheckSum send:string
+2024-06-13 13:57:10.822 +07:00 [Information] ticket tuong ung voi ma txnid:Motor20240613135109
+2024-06-13 13:57:10.823 +07:00 [Information] da cap nhat trang thai ve thanh cong
+2024-06-13 13:57:10.826 +07:00 [Information] HTTP "POST" "/api/VnPay/updateOrder" responded 200 in 36.1895 ms
+2024-06-13 13:57:10.842 +07:00 [Error] Failed executing DbCommand ("0"ms) [Parameters=["@p9='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tickets] SET [LocationId] = @p0, [PaymentMethodId] = @p1, [PaymentTime] = @p2, [StatusOder] = @p3, [TimeIn] = @p4, [TimeOut] = @p5, [UserId] = @p6, [VehicleId] = @p7, [VehicleNum] = @p8
+OUTPUT 1
+WHERE [TicketCode] = @p9;"
+2024-06-13 14:03:55.609 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 12.0293 ms
+2024-06-13 14:04:10.472 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 4.8402 ms
+2024-06-13 14:45:41.886 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 235.7932 ms
+2024-06-13 14:45:42.634 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 173.1571 ms
+2024-06-13 14:46:34.723 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 14:46:36.302 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1586.1959 ms
+2024-06-13 14:47:21.815 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 778.4710 ms
+2024-06-13 14:47:26.129 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 138.4374 ms
+2024-06-13 14:47:36.288 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 12.7430 ms
+2024-06-13 14:47:37.188 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 16.2955 ms
+2024-06-13 14:47:37.307 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 3.8010 ms
+2024-06-13 14:47:37.457 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 4.2767 ms
+2024-06-13 14:47:37.650 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 5.3604 ms
+2024-06-13 14:47:37.769 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 5.5250 ms
+2024-06-13 14:47:37.940 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 4.8219 ms
+2024-06-13 14:47:38.067 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 5.3561 ms
+2024-06-13 14:47:42.347 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 5.5083 ms
+2024-06-13 14:53:06.712 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 8.6149 ms
+2024-06-13 14:53:32.893 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 5.0466 ms
+2024-06-13 14:53:40.257 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 242.3311 ms
+2024-06-13 14:57:37.600 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 5.1900 ms
+2024-06-13 14:59:23.077 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.6302 ms
+2024-06-13 14:59:33.015 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 239.6459 ms
+2024-06-13 14:59:50.487 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 5.0091 ms
+2024-06-13 15:00:27.011 +07:00 [Information] HTTP "PUT" "/api/User/Logout" responded 200 in 6.8659 ms
+2024-06-13 15:01:58.755 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 342.7338 ms
+2024-06-13 15:01:59.466 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 227.1505 ms
+2024-06-13 15:02:28.205 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 15:02:29.964 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1766.9077 ms
+2024-06-13 15:02:38.387 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 923.7413 ms
+2024-06-13 15:04:10.893 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 333.1857 ms
+2024-06-13 15:04:28.767 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 268.2886 ms
+2024-06-13 15:04:29.350 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 164.7788 ms
+2024-06-13 15:04:38.093 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 15:04:39.502 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:04:39.543 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 1455.8325 ms
+2024-06-13 15:05:29.711 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 53.8588 ms
+2024-06-13 15:05:38.155 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 582.1985 ms
+2024-06-13 15:05:41.130 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:05:41.137 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 55.6217 ms
+2024-06-13 15:05:44.919 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 15.6780 ms
+2024-06-13 15:05:49.095 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 4.2629 ms
+2024-06-13 15:05:49.232 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 4.1622 ms
+2024-06-13 15:05:49.406 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 4.0967 ms
+2024-06-13 15:05:49.565 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 3.6780 ms
+2024-06-13 15:05:49.726 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 3.8356 ms
+2024-06-13 15:06:42.541 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 5.2959 ms
+2024-06-13 15:06:57.402 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 246.6570 ms
+2024-06-13 15:07:10.748 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:07:10.759 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 18.4790 ms
+2024-06-13 15:07:10.884 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.3639 ms
+2024-06-13 15:07:58.951 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 4.4856 ms
+2024-06-13 15:08:07.878 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 240.2478 ms
+2024-06-13 15:08:31.607 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:08:31.619 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 21.0365 ms
+2024-06-13 15:08:31.756 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.3177 ms
+2024-06-13 15:08:38.113 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 239.3612 ms
+2024-06-13 15:08:43.766 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 3.9765 ms
+2024-06-13 15:08:51.360 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 2.4925 ms
+2024-06-13 15:08:57.619 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 2.4803 ms
+2024-06-13 15:13:32.265 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 229.0460 ms
+2024-06-13 15:13:33.151 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 199.6174 ms
+2024-06-13 15:13:58.686 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 15:14:00.011 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1331.8931 ms
+2024-06-13 15:14:12.249 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:14:12.651 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 675.3904 ms
+2024-06-13 15:14:17.071 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:14:17.305 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 311.6533 ms
+2024-06-13 15:14:22.669 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:14:22.990 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 336.7549 ms
+2024-06-13 15:14:31.695 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:14:31.705 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 71.5479 ms
+2024-06-13 15:14:31.823 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.8259 ms
+2024-06-13 15:15:08.220 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 4.8717 ms
+2024-06-13 15:15:25.416 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:15:25.652 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 244.2523 ms
+2024-06-13 15:16:05.562 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:16:05.573 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 19.9597 ms
+2024-06-13 15:16:05.810 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 2.8975 ms
+2024-06-13 15:20:20.125 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 9.7245 ms
+2024-06-13 15:20:30.676 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:20:30.910 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 242.9892 ms
+2024-06-13 15:20:39.371 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:20:39.374 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 8.4675 ms
+2024-06-13 15:20:39.489 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.2104 ms
+2024-06-13 15:24:15.103 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 4.1947 ms
+2024-06-13 15:24:39.762 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 2.1512 ms
+2024-06-13 15:27:20.884 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 4.4915 ms
+2024-06-13 15:27:28.236 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:27:28.484 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 257.6322 ms
+2024-06-13 15:27:39.178 +07:00 [Information] HTTP "POST" "/api/Ticket/CreateTicket" responded 200 in 483.4055 ms
+2024-06-13 15:28:07.585 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:28:07.592 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 13.7216 ms
+2024-06-13 15:28:07.709 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 3.1687 ms
+2024-06-13 15:28:14.303 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1.9664 ms
+2024-06-13 15:28:22.190 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:28:22.425 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 239.9054 ms
+2024-06-13 15:28:25.234 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 15:28:25.242 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 11.9627 ms
+2024-06-13 15:28:25.358 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 1.8134 ms
+2024-06-13 16:09:26.998 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 235.3485 ms
+2024-06-13 16:09:28.136 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 208.1200 ms
+2024-06-13 16:09:45.705 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 16:09:45.932 +07:00 [Information] DataVnpay send:string
+2024-06-13 16:09:45.934 +07:00 [Information] CheckSum send:string
+2024-06-13 16:09:47.094 +07:00 [Error] HTTP "POST" "/api/VnPay/updateOrder" responded 500 in 1396.0177 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoVnPay.Repository.TicketRepository.updateTicket(VnpayPayment data) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 209
+   at DemoVnPay.Controllers.VnPayController.update(VnpayPayment data) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\VnPayController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-13 16:09:47.116 +07:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoVnPay.Repository.TicketRepository.updateTicket(VnpayPayment data) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 209
+   at DemoVnPay.Controllers.VnPayController.update(VnpayPayment data) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\VnPayController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-13 16:10:44.415 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 228.9374 ms
+2024-06-13 16:10:45.303 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 255.9068 ms
+2024-06-13 16:10:56.212 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 16:10:56.413 +07:00 [Information] DataVnpay send:21433534
+2024-06-13 16:10:56.414 +07:00 [Information] CheckSum send:string
+2024-06-13 16:10:57.588 +07:00 [Information] khong tim thay ma ve
+2024-06-13 16:10:57.598 +07:00 [Information] HTTP "POST" "/api/VnPay/updateOrder" responded 200 in 1393.0349 ms
+2024-06-13 16:22:23.155 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 258.8972 ms
+2024-06-13 16:22:24.131 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 169.8949 ms
+2024-06-13 16:22:39.249 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-13 16:22:40.791 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 16:22:41.299 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 2056.1956 ms
+2024-06-13 16:22:51.510 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 16:22:51.521 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 54.2156 ms
+2024-06-13 16:22:52.936 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 84.9776 ms
+2024-06-13 16:22:56.292 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 17.4890 ms
+2024-06-13 16:24:04.298 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 16:24:04.535 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 251.0892 ms
+2024-06-13 16:24:18.024 +07:00 [Warning] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-13 16:24:18.031 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 12.8866 ms
+2024-06-13 16:34:43.893 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 249.7932 ms
+2024-06-13 16:36:06.809 +07:00 [Error] HTTP "PUT" "/api/User/update" responded 500 in 80.6053 ms
+System.Exception: Có lỗi xảy ra
+   at TicketManagement.Repository.UserRepository.UpdateUser(User user) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\UserRepository.cs:line 140
+   at TicketManagement.Controllers.UserController.UpdateUser(User user) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\UserController.cs:line 40
+   at lambda_method163(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-13 16:36:06.828 +07:00 [Error] An unhandled exception has occurred while executing the request.
+System.Exception: Có lỗi xảy ra
+   at TicketManagement.Repository.UserRepository.UpdateUser(User user) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\UserRepository.cs:line 140
+   at TicketManagement.Controllers.UserController.UpdateUser(User user) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\UserController.cs:line 40
+   at lambda_method163(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

@@ -1,0 +1,65 @@
+2024-06-18 09:54:40.922 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 296.0793 ms
+2024-06-18 09:54:41.733 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 210.4545 ms
+2024-06-18 09:55:25.567 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-18 09:55:28.373 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 2812.7835 ms
+2024-06-18 10:00:07.868 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 26.1542 ms
+2024-06-18 10:00:38.592 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 1210.2953 ms
+2024-06-18 10:00:48.391 +07:00 [Error] HTTP "POST" "/api/Ticket/CreateTicket" responded 500 in 302.5479 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoVnPay.Repository.TicketRepository.GetQrCodeVnpay(String code) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 57
+   at DemoVnPay.Repository.TicketRepository.AddTicket(TicketRequest ticket) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 112
+   at DemoVnPay.Controllers.TicketController.createTicket(TicketRequest value) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\TicketController.cs:line 22
+   at lambda_method153(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-06-18 10:00:48.419 +07:00 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemoVnPay.Repository.TicketRepository.GetQrCodeVnpay(String code) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 57
+   at DemoVnPay.Repository.TicketRepository.AddTicket(TicketRequest ticket) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Repository\TicketRepository.cs:line 112
+   at DemoVnPay.Controllers.TicketController.createTicket(TicketRequest value) in E:\visual_studio\WebApi\DemoVnPay\DemoVnPay\Controllers\TicketController.cs:line 22
+   at lambda_method153(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-18 10:02:07.580 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 92.1179 ms
+2024-06-18 10:02:07.743 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 9.0572 ms
+2024-06-18 10:02:22.149 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 534.9794 ms
+2024-06-18 10:02:23.222 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 258.8164 ms
+2024-06-18 10:02:39.883 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-18 10:02:42.318 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 2441.6294 ms
+2024-06-18 10:02:47.396 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 445.5309 ms
+2024-06-18 10:10:28.483 +07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 243.2041 ms
+2024-06-18 10:10:29.043 +07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 154.5872 ms
+2024-06-18 10:10:42.200 +07:00 [Warning] Failed to determine the https port for redirect.
+2024-06-18 10:10:44.836 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 2642.6018 ms
+2024-06-18 10:11:06.196 +07:00 [Information] HTTP "POST" "/api/User/Login" responded 200 in 1067.8834 ms
+2024-06-18 10:11:13.730 +07:00 [Information] HTTP "POST" "/api/Ticket/CreateTicket" responded 200 in 731.1157 ms
+2024-06-18 10:11:16.052 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 73.0716 ms
+2024-06-18 10:11:16.192 +07:00 [Information] HTTP "GET" "/api/Location/GetAllLocationForCBB" responded 200 in 9.6189 ms
+2024-06-18 10:11:28.247 +07:00 [Information] HTTP "GET" "/api/User/Logout" responded 200 in 37.9999 ms
