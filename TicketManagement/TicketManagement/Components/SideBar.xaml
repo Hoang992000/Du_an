@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="RFIDApp.Components.SideBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RFIDApp.Components"
+             xmlns:icon="clr-namespace:Material.Icons.WPF;assembly=Material.Icons.WPF"
+             xmlns:custom="clr-namespace:RFIDApp.CustomElements"
+             xmlns:converters="clr-namespace:RFIDApp.Converters"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <converters:CustomBooleanToVisibilityConverter x:Key="visibilityConverter"/>
+    </UserControl.Resources>
+    <Grid Background="{StaticResource SidebarColor}" Focusable="False">
+        <StackPanel>
+            <Image Opacity="0.8" Source="../Resources/logonhatminh.png"/>
+            <TextBlock Text="{Binding UserName,StringFormat='Hi, {0}'}" FontSize="20" Margin="0,0,0,0" Foreground="{StaticResource PrimaryColor}" FontWeight="Bold"/>
+            <custom:CustomRadioButtonForMenu  Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Trang chủ" IsChecked="True" Command="{Binding HomeViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="Home"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Người dùng" Command="{Binding UserViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="User"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Danh sách vé" Command="{Binding TicketViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="BoxArrowUp"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Địa điểm" Command="{Binding LocationViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="LegoLocationOutline"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+            
+            <!--Graco10-->
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Phương tiện" Command="{Binding VehicleViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="AllTerrainVehicle"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" Visibility="{Binding IsBoss,Converter={StaticResource visibilityConverter}}" GroupName="Menu" DisplayText="Thông tin vnpay" Command="{Binding PaymentInfoViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="Payment"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" Visibility="{Binding IsBoss,Converter={StaticResource visibilityConverter}}" GroupName="Menu" DisplayText="Báo cáo" Command="{Binding ReportViewCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="ReportBoxOutline"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+            <custom:CustomRadioButtonForMenu Style="{StaticResource MenuButtonTheme}" GroupName="Menu" DisplayText="Đăng xuất" Command="{Binding LogoutCommand}">
+                <custom:CustomRadioButtonForMenu.Icon>
+                    <icon:MaterialIcon Kind="ExitToApp"/>
+                </custom:CustomRadioButtonForMenu.Icon>
+            </custom:CustomRadioButtonForMenu>
+        </StackPanel>
+    </Grid>
+</UserControl>

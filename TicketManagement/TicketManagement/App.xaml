@@ -1,0 +1,29 @@
+﻿<Application x:Class="TicketManagement.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TicketManagement"
+             Startup="ApplicationStart">
+    <Application.Resources>
+        <ResourceDictionary>
+
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ColorTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ScrollBarTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ButtonTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ListViewTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/LabelTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/DatePickerTextBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/TextBoxTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ComboBoxTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/CheckboxTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/TabControlTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Themes/ExpanderTheme.xaml"/>
+
+                <ResourceDictionary Source="ResourcesDictionarys/SettingsViewDictionary.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

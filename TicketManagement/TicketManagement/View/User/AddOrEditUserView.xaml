@@ -1,0 +1,58 @@
+﻿<Window x:Class="TicketManagement.View.User.AddOrEditUserView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicketManagement.View.User"
+        xmlns:component="clr-namespace:RFIDApp.Components" MouseDown="Window_MouseDown"
+        mc:Ignorable="d" WindowStyle="None" WindowStartupLocation="CenterScreen" 
+        Title="{Binding Title}" MinHeight="420" MaxHeight="420" MinWidth="350" MaxWidth="350">
+    
+    <Border CornerRadius="7" Padding="30" Background="Transparent">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{Binding Title}" FontSize="20" FontWeight="Bold" Grid.Row="0" Margin="0,10,0,10"/>
+            <StackPanel Grid.Row="1" >
+                <Label Content="Tên tài khoản" Style="{StaticResource TitleControl}"/>
+                <Border DockPanel.Dock="Bottom" BorderBrush="{StaticResource PrimaryColor}" BorderThickness="1" CornerRadius="7">
+                    <TextBox Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource DefaultTextboxStyle}" Text="{Binding UserName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                </Border>
+            </StackPanel>
+            <StackPanel Grid.Row="2" >
+                <Label Content="Tên người dùng" Style="{StaticResource TitleControl}"/>
+                <Border DockPanel.Dock="Bottom" BorderBrush="{StaticResource PrimaryColor}" BorderThickness="1" CornerRadius="7">
+                    <TextBox Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource DefaultTextboxStyle}" Text="{Binding FullName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                </Border>
+            </StackPanel>
+            <StackPanel Grid.Row="3" >
+                <Label Content="Mật khẩu" Style="{StaticResource TitleControl}"/>
+                <component:BindablePasswordBox Password="{Binding Password}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Orientation="Horizontal">
+                <Label Content="Admin:" Style="{StaticResource TitleControl}"/>
+
+                <CheckBox Margin="20,0,0,0" Content="Admin" IsEnabled="{Binding IsChange}" IsChecked="{Binding IsAdmin}" Style="{StaticResource HiddenText}" Foreground="{StaticResource PrimaryColor}"/>
+
+            </StackPanel>
+            <Grid Grid.Row="5" Margin="0,30,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource CancelButton}" Grid.Column="0"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                        Command="{Binding CancelCommand}"/>
+                <Button Style="{StaticResource SaveButton}" Grid.Column="1"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                        Command="{Binding SaveCommand}"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

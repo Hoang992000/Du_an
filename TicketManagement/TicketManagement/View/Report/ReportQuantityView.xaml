@@ -1,0 +1,50 @@
+﻿<Window x:Class="TicketManagement.View.Report.ReportQuantityView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicketManagement.View.Report"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="ReportQuantityView" Height="250" Width="400" WindowStyle="None">
+    <Border CornerRadius="7" Padding="30" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <TextBlock Margin="10 0 0 0" FontSize="20" Foreground="Black" VerticalAlignment="Center">Ngày bắt đầu:</TextBlock>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <TextBlock Margin="10 0 0 0" FontSize="20" Foreground="Black" VerticalAlignment="Center">Ngày kết thúc:</TextBlock>
+                </Grid>
+                
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <DatePicker Width="150" Height="30" FontSize="20" Focusable="False" SelectedDate="{Binding DateStart}"></DatePicker>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <DatePicker Width="150" Height="30" FontSize="20" Focusable="False" SelectedDate="{Binding DateEnd}"></DatePicker>
+
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button VerticalAlignment="Center" Grid.Row="2" Style="{StaticResource PrimaryButton}" Width="150" Content="Báo cáo" Grid.Column="0" Command="{Binding ExportCommand}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                <Button CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" VerticalAlignment="Center" Grid.Row="2" Style="{StaticResource PrimaryButton}" Width="150" Content="Huỷ" Grid.Column="1" Command="{Binding CancelCommand}"/>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
